@@ -13,12 +13,6 @@ public:
             mp[s[i]]++;
         }
 
-        for(auto x :mp){
-            if(x.second>1 && x.second%2!=0){
-                hasodd = true;
-            }
-        }
-
         for(auto x: mp){
             if(x.second>1){
                 ans += x.second - x.second%2;
@@ -28,8 +22,6 @@ public:
         if(ans < n){
             ans++;
         }
-
-        // ans++;
 
         return ans;
     }

@@ -5,7 +5,6 @@ public:
 
         if(n==1) return 1;
 
-        bool hasodd = false;
         unordered_map<char, int> mp;
         int ans = 0;
 

@@ -26,7 +26,6 @@ public:
             }
 
             if(mp[curr] == 0) mp.erase(curr);
-            else continue;
         }
 
         return true;

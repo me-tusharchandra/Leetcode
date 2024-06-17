@@ -4,8 +4,8 @@ public:
 
         if(c==0) return true;
 
-        int a=0;
-        int b=1;
+        long a=0;
+        long b=1;
 
         while(a<=b){
             if(pow(a,2)+pow(b,2) == c){

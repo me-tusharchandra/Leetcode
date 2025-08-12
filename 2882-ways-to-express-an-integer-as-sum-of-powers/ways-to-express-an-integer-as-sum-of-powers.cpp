@@ -17,14 +17,14 @@ public:
         if(power > n)
             return 0;
 
-        if(t[n][num] != -1){
-            return t[n][num];
+        if(t[num][n] != -1){
+            return t[num][n];
         }
 
         int take = solve(n-power, num+1, x);
         int skip = solve(n, num+1, x);
 
-        return t[n][num] = (take+skip)%M;
+        return t[num][n] = (take+skip)%M;
     }
 
     int numberOfWays(int n, int x) {
